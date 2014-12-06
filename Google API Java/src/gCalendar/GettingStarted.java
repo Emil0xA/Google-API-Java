@@ -36,10 +36,6 @@ import com.google.api.services.calendar.model.EventDateTime;
 public class GettingStarted {
 	/** To make Google Calendar API requests */
 	private Calendar service; 	
-	
-	private String applicationName; 
-	private String clientID;
-	private String clientSecret; 
 
 	/** 
 	 * Constructor - Acquire authorisation from user using OAuth 2.0
@@ -50,10 +46,6 @@ public class GettingStarted {
 	 * @throws URISyntaxException 
 	 */
 	public GettingStarted(String applicationName, String clientID, String clientSecret) throws IOException, GeneralSecurityException, URISyntaxException {
-		this.applicationName = applicationName; 
-		this.clientID = clientID;
-		this.clientSecret = clientSecret;
-
 		HttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport(); 
 		JacksonFactory jsonFactory = JacksonFactory.getDefaultInstance(); 
 

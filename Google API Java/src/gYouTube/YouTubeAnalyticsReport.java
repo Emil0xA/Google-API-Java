@@ -55,8 +55,9 @@ public class YouTubeAnalyticsReport {
 	/**
 	 * Constructor - Acquire authorisation and user's channel information
 	 * 
-	 * @param clientID
-	 * @throws IOException
+	 * @param clientID OAuth Client ID
+	 * @param clientSecret OAuth Client Secret 
+	 * @throws IOException 
 	 */
 	public YouTubeAnalyticsReport(String clientID, String clientSecret) throws IOException {
 		Credential credential = authorise(clientID, clientSecret); 
