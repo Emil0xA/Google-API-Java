@@ -34,7 +34,9 @@ import com.google.api.services.calendar.model.EventDateTime;
  * @author Emil Tan
  */
 public class GettingStarted {
+	/** To make Google Calendar API requests */
 	private Calendar service; 	
+	
 	private String applicationName; 
 	private String clientID;
 	private String clientSecret; 
